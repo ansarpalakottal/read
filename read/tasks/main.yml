@@ -1,9 +1,9 @@
 ---
   - name: Reading the file
-    shell: cat /home/u55560/test/test.txt
+    shell: cat /tmp/test.txt
     register: sample
 
   - debug: msg={{ sample.stdout }}
 
   - debug: msg="=============================="
-  - debug: msg={{ lookup('file','/home/u55560/test/test.txt') }}
+  - debug: msg={{ lookup('file','/tmp/test.txt') }}

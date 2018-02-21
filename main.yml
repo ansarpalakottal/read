@@ -1,5 +1,5 @@
 ---
-- hosts: webserver-ansar
+- hosts: localhost
 
   roles:
     - read
